@@ -1,5 +1,8 @@
 x64
 x86
+Debug
+Release
 
 .vs
 *.user
+*.filters
