@@ -2,6 +2,8 @@ x64
 x86
 Debug
 Release
+bin/
+obj/
 
 .vs
 *.user
