@@ -22,7 +22,7 @@ namespace PowerSetting
         private static Guid GUID_LIDOPEN_ACTION = new Guid("99ff10e7-23b1-4c07-a9d1-5c3206d741b4");        //lid open action
         private static Guid GUID_POWERBUTTON_ACTION = new Guid("7648efa3-dd9c-4e3e-b566-50f929386280");    //power button press action
 
-        //SubGroup: 
+        //SubGroup: Display settings
         private static Guid GUID_VIDEO_SUBGROUP = new Guid("7516b95f-f776-4464-8c53-06167f40cc99");
         private static Guid GUID_VIDEOIDLE = new Guid("3c0bc021-c8a8-4e07-a973-6b14cbcb2b7e"); // Screen display turn off.
 
