@@ -1,0 +1,64 @@
+﻿<UserControl x:Class="CustomControls.TabControl_Style.TabControl_Show"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CustomControls.TabControl_Style"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="./TabControl_StyleResource.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <TabControl x:Name="defaultTab" Grid.Row="0" Grid.Column="0" SelectedIndex="3">
+            <TabItem x:Name="TabItem_1" Background="Yellow">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <Ellipse Width="10" Height="10" Fill="DarkBlue"/>
+                        <TextBlock Text="Tab-01"/>
+                    </StackPanel>
+                </TabItem.Header>
+                <StackPanel>
+                    <TextBlock Text="Enter some text " HorizontalAlignment="Center" Margin="0,20,0,0"/>
+                    <TextBox Name="textBox1" Text="This is Tab Item 01" Width="150" Margin="0,20,0,0"/>
+                </StackPanel>
+            </TabItem>
+
+            <TabItem Name="TabItem_2" Header="Tab-02" Background="BlueViolet">
+                <TextBlock Text="This is Tab 02 card" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </TabItem>
+
+            <TabItem Name="tabIitemContent" Header="TabItem with Buttons">
+                <StackPanel>
+                    <Button Content="_OK"/>
+                    <Button Content="_Cancel"/>
+                </StackPanel>
+            </TabItem>
+
+            <TabItem Name="backgroundcolor" Header="Background">
+                <TabItem.Content>Background property information goes here.</TabItem.Content>
+            </TabItem>
+        </TabControl>
+
+        <TabControl x:Name="userTab" Grid.Row="1" Margin="5">
+            
+        </TabControl>
+
+
+
+    </Grid>
+</UserControl>

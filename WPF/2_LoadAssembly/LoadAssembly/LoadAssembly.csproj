@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{885BC15E-48A8-4523-9906-39604D4D71BE}</ProjectGuid>
+    <ProjectGuid>{74359C01-92D6-4769-BCB0-B2024835B731}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>CustomControls</RootNamespace>
-    <AssemblyName>CustomControls</AssemblyName>
+    <RootNamespace>LoadAssembly</RootNamespace>
+    <AssemblyName>LoadAssembly</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -75,31 +75,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Button_Style\Button_Show.xaml.cs">
-      <DependentUpon>Button_Show.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ScrollBar_Style\ScrollBar_Custom.xaml.cs">
-      <DependentUpon>ScrollBar_Custom.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="TabControl_Style\TabControl_Show.xaml.cs">
-      <DependentUpon>TabControl_Show.xaml</DependentUpon>
-    </Compile>
-    <Page Include="Button_Style\Button_StyleResource.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Button_Style\Button_Show.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="ComboBox_Style\dropDown_Style1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="ComboBox_Style\MyResource.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -108,29 +83,10 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ComboBox_Style\dropDown_Style1.xaml.cs">
-      <DependentUpon>dropDown_Style1.xaml</DependentUpon>
-    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="ScrollBar_Style\ScrollBar_Resource.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="ScrollBar_Style\ScrollBar_Custom.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="TabControl_Style\TabControl_Show.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="TabControl_Style\TabControl_StyleResource.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -158,6 +114,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

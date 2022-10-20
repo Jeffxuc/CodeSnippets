@@ -25,10 +25,11 @@ namespace CustomControls
             InitializeComponent();
 
             //ComboBox_Style.dropDown_Style1 dropDown_Style1 = new ComboBox_Style.dropDown_Style1();
-            ScrollBar_Style.ScrollBar_Custom scrollBar_Custom = new ScrollBar_Style.ScrollBar_Custom();
+            //ScrollBar_Style.ScrollBar_Custom scrollBar_Custom = new ScrollBar_Style.ScrollBar_Custom();
+            //Button_Style.Button_Show button_Show = new Button_Style.Button_Show();
+            TabControl_Style.TabControl_Show tabControl_Show = new TabControl_Style.TabControl_Show();
 
-
-            mainGird.Children.Add(scrollBar_Custom);
+            mainGird.Children.Add(tabControl_Show);
         }
     }
 }
