@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32126.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6_CheckBitLockerEnable", "6_CheckBitLockerEnable\6_CheckBitLockerEnable.csproj", "{68705270-C9AD-481E-B4E7-8B460B073F92}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68705270-C9AD-481E-B4E7-8B460B073F92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68705270-C9AD-481E-B4E7-8B460B073F92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68705270-C9AD-481E-B4E7-8B460B073F92}.Debug|x64.ActiveCfg = Debug|x64
+		{68705270-C9AD-481E-B4E7-8B460B073F92}.Debug|x64.Build.0 = Debug|x64
+		{68705270-C9AD-481E-B4E7-8B460B073F92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68705270-C9AD-481E-B4E7-8B460B073F92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68705270-C9AD-481E-B4E7-8B460B073F92}.Release|x64.ActiveCfg = Release|x64
+		{68705270-C9AD-481E-B4E7-8B460B073F92}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A6818E49-CF8D-4050-B09B-4A79E8C0D2A8}
+	EndGlobalSection
+EndGlobal

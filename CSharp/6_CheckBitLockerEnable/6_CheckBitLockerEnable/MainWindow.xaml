@@ -1,0 +1,17 @@
+﻿<Window x:Class="_6_CheckBitLockerEnable.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_6_CheckBitLockerEnable"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Horizontal" Margin="30,60,30,30">
+            <Label Content="Check is Bitlocker enabled"/>
+            <Label x:Name="res" Margin="20,0,40,0" Foreground="DeepSkyBlue" Content="InitialData" FontWeight="Bold"/>
+            <Label x:Name="exceptionMsg" Content="Exception message" Foreground="Red"/>
+        </StackPanel>
+        
+    </Grid>
+</Window>
