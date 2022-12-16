@@ -19,15 +19,16 @@ namespace ReadWriteIni
             //ReadWriteIniFile.DeleteKeyValPair("CHT", "ID_PreparePrompt", iniFile);
             //ReadWriteIniFile.DeleteEntireSection("Japanese", iniFile);
 
-            ReadWriteIniFile.WriteValueToKey("CHT", "key01", "value01", iniFile1);
-
+            //ReadWriteIniFile.WriteValueToKey("CHT", "key02", "value02", iniFile1);
 
             // 写入整节数据时，要注意每两对 Key=Value 之间有截止符 '\0'
-            string entireSectionData = "MyKey01=Value01" + '\0' + 
-                                        "测试Key=键值对02" + '\0' + 
+            string entireSectionData = "MyKey01=Value01" + '\0' +
+                                        "测试Key=\"键值对02   \"" + '\0' + 
                                         "TestKey03" + "=" + "FinalValue03";
 
-            ReadWriteIniFile.WriteKeyValToSection("03-TestSection", entireSectionData, iniFile1);
+            ReadWriteIniFile.WriteKeyValToSection("03_TestSection", entireSectionData, iniFile1);
+
+            string val = ReadWriteIniFile.GetValueByKey("03_TestSection", "测试Key", iniFile1);
 
         }
     }

@@ -17,11 +17,15 @@ namespace WriteLog
         /// </summary>
         public static void WinLog(string message,
                                   [System.Runtime.CompilerServices.CallerMemberName] string memberName = "",
-                                  [System.Runtime.CompilerServices.CallerLineNumber] int sourceLineNumber = 0)
+                                  [System.Runtime.CompilerServices.CallerLineNumber] int sourceLineNumber = 0,
+                                  [System.Runtime.CompilerServices.CallerFilePath] string fileName="")
         {
             try
             {
                 string logMsg = String.Format("[{0}][{1}][{2}]: {3}", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff"), memberName, sourceLineNumber, message);
+
+                // Get the file name where this log is written.
+                string curFile = Path.GetFileNameWithoutExtension(fileName);
 
                 if (!File.Exists(filePath))
                 {

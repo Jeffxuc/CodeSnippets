@@ -28,7 +28,7 @@ namespace ReadWriteIni
         private static extern int WritePrivateProfileString(string Section, string Key, string Value, string FilePath);
 
         // Write key-values to a section and delete all original key-values if exist.
-        [DllImport("kernel32", CharSet=CharSet.Unicode, SetLastError = true)]
+        [DllImport("kernel32", CharSet=CharSet.Unicode)]
         private static extern int WritePrivateProfileSection(string section, string lpString, string filePath);
         #endregion
 
@@ -135,6 +135,7 @@ namespace ReadWriteIni
         /// <param name="filePath"></param>
         public static void WriteKeyValToSection(string section, string keyValStr, string filePath)
         {
+            // 该函数会将原本是 UTF-8 编码的文本转换成 ASNI 格式
             WritePrivateProfileSection(section, keyValStr, filePath);
         }
 
