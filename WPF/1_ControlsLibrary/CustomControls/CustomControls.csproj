@@ -78,6 +78,9 @@
     <Compile Include="Button_Style\Button_Show.xaml.cs">
       <DependentUpon>Button_Show.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CircularProgressBar_Style\CircleProgressBar_01.xaml.cs">
+      <DependentUpon>CircleProgressBar_01.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ScrollBar_Style\ScrollBar_Custom.xaml.cs">
       <DependentUpon>ScrollBar_Custom.xaml</DependentUpon>
     </Compile>
@@ -89,6 +92,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Button_Style\Button_Show.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CircularProgressBar_Style\CircleProgressBar_01.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CircularProgressBar_Style\StyleResource.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -158,6 +169,10 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <PackageReference Include="Unnoficial.Microsoft.Expression.Drawing">
+      <Version>1.0.0</Version>
+    </PackageReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

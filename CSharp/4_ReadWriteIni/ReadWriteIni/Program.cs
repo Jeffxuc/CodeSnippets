@@ -10,10 +10,12 @@ namespace ReadWriteIni
     {
         static void Main(string[] args)
         {
-            string iniFile = @"C:\ProgramData\myTest.ini";
+            //string iniFile = @"C:\ProgramData\myTest.ini";
             string iniFile1 = @"C:\ProgramData\myTest01.ini";
 
-            //string val = ReadWriteIniFile.GetValueByKey("CHS", "ID_Tips", iniFile);
+            //ReadWriteIniFile.WriteValueToKey("CHT", "key02", "value09992", iniFile1);
+            string val = ReadWriteIniFile.GetValueByKey("CHT", "key02", iniFile1);
+
             //Dictionary<string, string> resDic = ReadWriteIniFile.ParseKeyValueToDictionary("CHS", iniFile);
 
             //ReadWriteIniFile.DeleteKeyValPair("CHT", "ID_PreparePrompt", iniFile);
@@ -28,7 +30,7 @@ namespace ReadWriteIni
 
             ReadWriteIniFile.WriteKeyValToSection("03_TestSection", entireSectionData, iniFile1);
 
-            string val = ReadWriteIniFile.GetValueByKey("03_TestSection", "测试Key", iniFile1);
+            //string val = ReadWriteIniFile.GetValueByKey("03_TestSection", "测试Key", iniFile1);
 
         }
     }
